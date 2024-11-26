@@ -18,11 +18,27 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BinaryFileReader.cpp" />
+    <ClCompile Include="BinaryFileWriter.cpp" />
+    <ClCompile Include="BMP.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinaryFileReader.hpp" />
+    <ClInclude Include="BinaryFileWriter.hpp" />
+    <ClInclude Include="BMP.hpp" />
+    <ClInclude Include="Common.hpp" />
+    <ClInclude Include="Image.hpp" />
+    <ClInclude Include="Point.hpp" />
+    <ClInclude Include="RGB.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0d23b318-892d-4a9a-92b8-9d3a73476c54}</ProjectGuid>
-    <RootNamespace>Kumamoto</RootNamespace>
+    <ProjectGuid>{bc4a9491-2ab5-4f10-920d-b95529f65f3e}</ProjectGuid>
+    <RootNamespace>minicamp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -130,22 +146,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="BinaryFileReader.cpp" />
-    <ClCompile Include="BinaryFileWriter.cpp" />
-    <ClCompile Include="BMP.cpp" />
-    <ClCompile Include="Image.cpp" />
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BinaryFileReader.hpp" />
-    <ClInclude Include="BinaryFileWriter.hpp" />
-    <ClInclude Include="BMP.hpp" />
-    <ClInclude Include="Image.hpp" />
-    <ClInclude Include="RGB.hpp" />
-    <ClInclude Include="Common.hpp" />
-    <ClInclude Include="Point.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
