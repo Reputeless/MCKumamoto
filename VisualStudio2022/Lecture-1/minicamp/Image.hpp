@@ -118,7 +118,7 @@ namespace mini
 		/// @remark image[y][x] で指定したピクセルにアクセスします。
 		/// @return 指定した行の先頭ポインタ
 		[[nodiscard]]
-		RGB* operator [](size_t y) noexcept
+		RGB* operator [](size_t y) noexcept MINI_LIFETIMEBOUND
 		{
 			return (m_pixels.data() + (y * m_size.x));
 		}
@@ -128,7 +128,7 @@ namespace mini
 		/// @remark image[y][x] で指定したピクセルにアクセスします。
 		/// @return 指定した行の先頭ポインタ
 		[[nodiscard]]
-		const RGB* operator [](size_t y) const noexcept
+		const RGB* operator [](size_t y) const noexcept MINI_LIFETIMEBOUND
 		{
 			return (m_pixels.data() + (y * m_size.x));
 		}
@@ -136,7 +136,7 @@ namespace mini
 		/// @brief 画像データの先頭ポインタを返します。
 		/// @return 画像データの先頭ポインタ
 		[[nodiscard]]
-		RGB* data() noexcept
+		RGB* data() noexcept MINI_LIFETIMEBOUND
 		{
 			return m_pixels.data();
 		}
@@ -144,7 +144,7 @@ namespace mini
 		/// @brief 画像データの先頭ポインタを返します。
 		/// @return 画像データの先頭ポインタ
 		[[nodiscard]]
-		const RGB* data() const noexcept
+		const RGB* data() const noexcept MINI_LIFETIMEBOUND
 		{
 			return m_pixels.data();
 		}
@@ -189,7 +189,7 @@ namespace mini
 		/// @brief ピクセル配列の先頭位置を指すイテレータを返します。
 		/// @return ピクセル配列の先頭位置を指すイテレータ
 		[[nodiscard]]
-		iterator begin() noexcept
+		iterator begin() noexcept MINI_LIFETIMEBOUND
 		{
 			return m_pixels.begin();
 		}
@@ -197,7 +197,7 @@ namespace mini
 		/// @brief ピクセル配列の終端位置を指すイテレータを返します。
 		/// @return ピクセル配列の終端位置を指すイテレータ
 		[[nodiscard]]
-		iterator end() noexcept
+		iterator end() noexcept MINI_LIFETIMEBOUND
 		{
 			return m_pixels.end();
 		}
@@ -205,7 +205,7 @@ namespace mini
 		/// @brief ピクセル配列の先頭位置を指すイテレータを返します。
 		/// @return ピクセル配列の先頭位置を指すイテレータ
 		[[nodiscard]]
-		const_iterator begin() const noexcept
+		const_iterator begin() const noexcept MINI_LIFETIMEBOUND
 		{
 			return m_pixels.begin();
 		}
@@ -213,7 +213,7 @@ namespace mini
 		/// @brief ピクセル配列の終端位置を指すイテレータを返します。
 		/// @return ピクセル配列の終端位置を指すイテレータ
 		[[nodiscard]]
-		const_iterator end() const noexcept
+		const_iterator end() const noexcept MINI_LIFETIMEBOUND
 		{
 			return m_pixels.end();
 		}
