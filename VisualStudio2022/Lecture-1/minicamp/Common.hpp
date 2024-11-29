@@ -22,8 +22,6 @@ namespace mini
 	#pragma warning(default: CPPCORECHECK_LIFETIME_WARNINGS)
 #elif defined(__clang__) // Clang
 	#define MINI_LIFETIMEBOUND [[clang::lifetimebound]]
-#elif defined(__GNUC__) // GCC
-	#define MINI_LIFETIMEBOUND __attribute__((lifetimebound))
 #else
 	#define MINI_LIFETIMEBOUND
 #endif
