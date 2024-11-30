@@ -9,9 +9,5 @@
 
 int main()
 {
-	auto it = mini::Image{256,256}.begin();
-	
-	it->r = 34;
-	
 	std::println("Hello, minicamp!");
 }
